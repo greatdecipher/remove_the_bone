@@ -5,8 +5,8 @@ import os
 
 load_dotenv()
 
-USER = os.getenv("USER")
-PASSWORD = os.getenv("PASSWORD")
+USER = os.getenv("PROD_USER")
+PASSWORD = os.getenv("PROD_PASS")
 
 DATABASE_URL = f"postgresql://{USER}:{PASSWORD}@localhost/password_manager"
 database = Database(DATABASE_URL)
